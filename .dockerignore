@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+artifacts/
+notebook/
+LICENSE
+.vscode/
+README.md 
+env/
+data/
+logs/
+downloads/
