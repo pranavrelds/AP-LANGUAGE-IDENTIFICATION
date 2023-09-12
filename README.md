@@ -1,20 +1,26 @@
-# Language Detection
+# AP-LANGUAGE-IDENTIFICATION
 
-This app recognizes 4 different Indian Languages from the audios of youtube videos. The dataset contains 4 Indian Languages (Tamil, Hindi, Kannada, Telugu). Each sample is of 5 second duration.
+## Problem Statement
+In a multilingual world, identifying the language of spoken content is essential for various applications, including transcription services, content categorization, and more. Manual identification is not scalable and can be error-prone. This project provides a solution for an automated and efficient recognition of spoken languages from audio clips.
 
 ## Solution
+The AP-LANGUAGE-IDENTIFICATION project provides a solution for recognizing languages from spoken content. The application is built using Flask and offers a user-friendly interface where users can upload audio clips and get the identified language.
 
-The proposed solution is by using Deep Learning model to solve the identity if the spoken languagefrom the audio.
+- **Training**: The application has a training pipeline in place, which can be triggered via the `/train` endpoint. This pipeline is designed to train a model on a dataset of audio clips and their corresponding languages.
 
-### Resources used:
+- **Prediction**: The `/predict` endpoint allows users to input an audio clip and receive the identified language.
 
-Framework - Pytorch & Torchaudio
+## How to Run the Code
 
-Web Framework - Flask application which takes in audio and recognizes the languagefrom
-
+1. **Setup**: Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Run the Application**: Execute the main application file:
+   ```bash
+   python app.py
+   ```
+## Resources used:
+Framework - PyTorch & Torchaudio
+Web Framework - Flask application that takes in audio and recognizes the language from that audio
 Cloud Platform - Google Cloud Platform
-
-
-## Flowchart
-
-![image](https://github.com/pranavrelds/AP-LANGUAGE-IDENTIFICATION/assets/84423424/33bab6c4-7dd0-474f-aba3-c9d86287f685)
