@@ -21,6 +21,6 @@ The AP-LANGUAGE-IDENTIFICATION project provides a solution for recognizing langu
    python app.py
    ```
 ## Resources used:
-Framework - PyTorch & Torchaudio
-Web Framework - Flask application that takes in audio and recognizes the language from that audio
-Cloud Platform - Google Cloud Platform
+* Framework - PyTorch & Torchaudio
+* Web Framework - Flask application that takes in audio and recognizes the language from that audio
+* Cloud Platform - Google Cloud Platform
