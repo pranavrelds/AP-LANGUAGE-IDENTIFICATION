@@ -1,17 +1,20 @@
 # AP-LANGUAGE-IDENTIFICATION
 
 ## Problem Statement
-In a multilingual world, identifying the language of spoken content is essential for various applications, including transcription services, content categorization, and more. Manual identification is not scalable and can be error-prone. This project provides a solution for an automated and efficient recognition of spoken languages from audio clips.
+Identifying the language of spoken content is important in a multilingual world for a variety of applications such as transcription services, content categorization, and more. This is an attempt to create an application that can recognize four different spoken Indian languages from audio extracted from YouTube videos (multi-class classification). The audio samples in the dataset are from four different Indian languages. Each audio sample is 5 seconds long. This dataset was created using regional YouTube videos. The dataset includes the following languages: Hindi, Kannada, Tamil, and Telugu.
 
-## Solution
-The AP-LANGUAGE-IDENTIFICATION project provides a solution for recognizing languages from spoken content. The application is built using Flask and offers a user-friendly interface where users can upload audio clips and get the identified language.
+## Proposed Solution
 
-- **Training**: The application has a training pipeline in place, which can be triggered via the `/train` endpoint. This pipeline is designed to train a model on a dataset of audio clips and their corresponding languages.
+A custom CNN model to identify the spoken language from audio using the following steps:
+1. Prep-process the data: Resampling, adjusting the number of channels, padding data if necessary
+2. Convert the pre-processed data into a Mel Spectrogram image
+3. Build a custom CNN model and train on a custom dataset created using Mel Spectrogram images
+4. Create a web app
+5. Deploy on the cloud
 
-- **Prediction**: The `/predict` endpoint allows users to input an audio clip and receive the identified language.
+Refer flowchart folder for more details
 
-## How to Run the Code
-
+## To run the code:
 1. **Setup**: Install the required packages:
    ```bash
    pip install -r requirements.txt
@@ -21,6 +24,6 @@ The AP-LANGUAGE-IDENTIFICATION project provides a solution for recognizing langu
    python app.py
    ```
 ## Resources used:
-* Framework - PyTorch & Torchaudio
+* Deep Learning Framework - PyTorch & Torchaudio
 * Web Framework - Flask application that takes in audio and recognizes the language from that audio
 * Cloud Platform - Google Cloud Platform
